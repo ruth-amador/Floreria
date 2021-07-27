@@ -209,38 +209,120 @@
       </header>
       <!-- header-area-end -->
 
-<!--IMAGEN BANNER -->
- <img src="catalogoVB/banner.jpg" width="300" height="150">
-
 
 <main>
 
-    
-    <div>
-        <h2>Disfruta tu compra!</h2>
-        <div>
-            <!--insertamos tabla para mostrar el catalogo de lo mas nuevo-->
-            <table>
-               <tr>
-                    <td>
-                    <img src="catalogoVB/ave.jpg" width="100" height="100"><br>AVE DEL PARAISO <a href="ave.html">
-                    <button type="submit">DETALLES</button></button></a>
-                    </td><td><img src="catalogoVB/rosa.jpg" width="100" height="100"><br>ROSAS <a href="rosas.html"><br>
-                      <button type="submit">DETALLES</button></button></a></td>
-                    
-                <tr><td><img src="catalogoVB/gerberas.jpg" width="100" height="100"><br>GERBERAS <a href="gerberas.html">
-                  <br><button type="submit">DETALLES</button></button></a>
-                   
-                    <td><img src="catalogoVB/orquidea.jpg" width="100" height="100"><br>ORQUIDEAS <a href="orquideas.html">
-                      <button type="submit">DETALLES</button></button></a>
-                      </tr><td>
-              
-            </table>
+   <!-- cart-area -->
+   <div class="cart-area pt-100 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="cart-wrapper">
+                    <div class="table-responsive">
+                        <table class="table mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="product-thumbnail"></th>
+                                    <th class="product-name">Producto</th>
+                                    <th class="product-price">Precio</th>
+                                    <th class="product-quantity">Cantidad</th>
+                                    <th class="product-subtotal">SUBTOTAL</th>
+                                    <th class="product-delete"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product-thumbnail"><a href="shop-details.html"><img src="img/product/cart_img01.jpg" alt=""></a></td>
+                                    <td class="product-name">
+                                        <h4><a href="shop-details.html">Travelling Bags</a></h4>
+                                    </td>
+                                    <td class="product-price">$ 37.00</td>
+                                    <td class="product-quantity">
+                                        <div class="cart-plus-minus">
+                                            <form action="#" class="num-block">
+                                                <input type="text" class="in-num" value="1" readonly="">
+                                                <div class="qtybutton-box">
+                                                    <span class="plus"><img src="img/icon/plus.png" alt=""></span>
+                                                    <span class="minus dis"><img src="img/icon/minus.png" alt=""></span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </td>
+                                    <td class="product-subtotal"><span>$ 74.00</span></td>
+                                    <td class="product-delete"><a href="#"><i class="flaticon-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="product-thumbnail"><a href="shop-details.html"><img src="img/product/cart_img02.jpg" alt=""></a></td>
+                                    <td class="product-name">
+                                        <h4><a href="shop-details.html">Travelling Bags</a></h4>
+                                    </td>
+                                    <td class="product-price">$ 37.00</td>
+                                    <td class="product-quantity">
+                                        <div class="cart-plus-minus">
+                                            <form action="#" class="num-block">
+                                                <input type="text" class="in-num" value="1" readonly="">
+                                                <div class="qtybutton-box">
+                                                    <span class="plus"><img src="img/icon/plus.png" alt=""></span>
+                                                    <span class="minus dis"><img src="img/icon/minus.png" alt=""></span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </td>
+                                    <td class="product-subtotal"><span>$ 74.00</span></td>
+                                    <td class="product-delete"><a href="#"><i class="flaticon-trash"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="shop-cart-bottom mt-20">
+                        <div class="cart-coupon">
+                            <form action="#">
+                                <input type="text" placeholder="Ingresar Codigo de Cupon...">
+                                <button class="btn">Aplicar Cupon</button>
+                            </form>
+                        </div>
+                        <div class="continue-shopping">
+                            <a href="shop.html" class="btn">Actualizar Compra</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total pt-95">
+                    <h3 class="title">Total Compra</h3>
+                    <div class="shop-cart-widget">
+                        <form action="#">
+                            <ul>
+                                <li class="sub-total"><span>SUBTOTAL</span> $ 136.00</li>
+                                <li>
+                                    <span>Envio</span>
+                                    <div class="shop-check-wrap">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Rango de Compra Minima: $15</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Emvio Gratis</label>
+                                        </div>
+                                        <a href="#" class="calculate">Calcular Envio</a>
+                                    </div>
+                                </li>
+                                <li class="cart-total-amount"><span>TOTAL</span> <span class="amount">$ 151.00</span></li>
+                            </ul>
+                            <a href="checkout.html" class="btn">Proceder a Compra</a>
+                        </form>
+                    </div>
+                </div>
             </div>
-            </div>
-            <a href="catalogodeprod.html"><button type="submit"><h3>***REALIZA TU COMPRA AHORA*** </h3></button></a>
-            
-            </main>
+        </div>
+    </div>
+</div>
+<!-- cart-area-end -->
+
+
+
+
+ 
+ </main>
             </body>
             
           
@@ -264,7 +346,7 @@
                           <div class="footer-link-wrap">
                               <nav class="menu-links">
                                   <ul>
-                                     
+                                       <li><a href="nosotros.html">Nosotros</a></li>
                                       <li><a href="sucursales.html">Sucursales</a></li>
                                       <li><a href="envios.html">Envios</a></li>
                                       <li><a href="contact.html"></a></li>
